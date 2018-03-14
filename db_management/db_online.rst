@@ -22,13 +22,13 @@ Several actions are available:
 .. image:: media/db_buttons.png
     :align: center
 
-* Upgrade
+* :ref:`Upgrade <upgrade>`
     Upgrade your database to the latest Odoo version to enjoy cutting-edge features
 * :ref:`Duplicate <duplicate_online>`
     Make an exact copy of your database, if you want
     to try out new apps or new flows without compromising
     your daily operations
-* Rename
+* :ref:`Rename <rename_online_database>`
     Rename your database (and its URL)
 * **Backup**
     Download an instant backup of your database; note that we
@@ -42,6 +42,36 @@ Several actions are available:
     Access our `support page <https://www.odoo.com/help>`__
     with the correct database already selected
 
+.. _upgrade:
+
+Upgrade
+=======
+
+Make sure to be connected to the database you want to upgrade and access to the
+database management page. On the line of the database you want to upgrade, click
+on the "Upgrade" button.
+
+.. image:: media/upgrade1.png
+    :align: center
+
+By clicking on the "Test upgrade" button an upgrade request will be generated. If our
+automated system will not encounter any problem you will receive a "Test" version
+of your database upgraded to the latest version.
+
+.. image:: media/test_upgrade.png
+    :align: center
+
+.. note :: If it will not be possible to create a Test Database automatically, our
+    dedicated team will have to work on it. You will be notified by email and
+    the process will take up to 4 weeks.
+
+You will have the possibility to test it for 1 month. When you will be ready,
+and be sure that there are no problem compared to your actual version, you can
+click again on the Upgrade button, and confirm by clicking on Upgrade (the button
+with the little rocket!) to definitely switch to the upgraded version of Odoo.
+
+.. image:: media/upgrade.png
+    :align: center
 
 .. _duplicate_online:
 
@@ -83,6 +113,19 @@ database.
     .. image:: media/dup_expires.png
         :align: center
 
+.. _rename_online_database:
+
+Rename a Database
+===================
+
+To rename your database, make sure you are connected to the database you want
+to rename, access the `database management page <https://www.odoo.com/my/databases>`__
+and click **Rename**. You will have to give a new name to your database,
+then click **Rename Database**.
+
+.. image:: media/rename.png
+    :align: center
+
 .. _delete_online_database:
 
 Deleting a Database
@@ -113,5 +156,8 @@ reload automatically.
 
 .. note::
     * If you need to re-use this database name, it will be immediately available.
+
+    * It is not possible to delete a database if it is expired or linked
+      to a Subscription. In these cases contact `Odoo Support <https://www.odoo.com/help>`__
 
     * If you want to delete your Account, please contact `Odoo Support <https://www.odoo.com/help>`__
